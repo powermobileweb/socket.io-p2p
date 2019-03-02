@@ -1,0 +1,10 @@
+ui: tape
+server: ./test/support/server.js
+browsers:
+  - name: chrome
+    version: latest
+  - name: firefox
+    version: latest
+browserify:
+  - plugins: envify
+  - transform: envify
